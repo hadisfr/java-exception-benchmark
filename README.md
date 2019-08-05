@@ -17,6 +17,6 @@ to investigate performance impact of
 | twoDepthExceptionTest          | sample | 1742896 | 1943.462 | ± 44.310 | ns/op |
 | zeroDepthExceptionTest         | sample | 1664964 | 1807.943 | ± 19.644 | ns/op |
 
-![benchmarks](benchmarks.png)
+![benchmarks](Benchmarks.png)
 
 Graphs are generated using [JMH Visualizer](https://jmh.morethan.io/).

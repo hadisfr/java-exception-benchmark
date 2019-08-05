@@ -12,7 +12,7 @@ import java.util.concurrent.TimeUnit;
 @State(Scope.Thread)
 @BenchmarkMode(Mode.SampleTime)
 @OutputTimeUnit(TimeUnit.NANOSECONDS)
-public class benchmarks {
+public class Benchmarks {
 
     private int one = 1;
 
@@ -87,12 +87,12 @@ public class benchmarks {
 
     public static void main(String[] args) throws RunnerException {
         Options opt = new OptionsBuilder()
-                .include(benchmarks.class.getSimpleName())
+                .include(Benchmarks.class.getSimpleName())
                 .warmupIterations(2)
                 .measurementIterations(5)
                 .forks(1)
                 .resultFormat(ResultFormatType.JSON)
-                .result(String.format("%s.json", benchmarks.class.getSimpleName()))
+                .result(String.format("%s.json", Benchmarks.class.getSimpleName()))
                 .build();
 
         new Runner(opt).run();
