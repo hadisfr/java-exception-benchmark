@@ -1,0 +1,883 @@
+# JMH version: 1.21
+# VM version: JDK 12, Java HotSpot(TM) 64-Bit Server VM, 12+33
+# VM invoker: /opt/java/oracle_jdk12/bin/java
+# VM options: <none>
+# Warmup: 2 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Sampling time
+# Benchmark: io.teng.benchmark.Benchmarks.baseline
+
+# Run progress: 0.00% complete, ETA 00:09:20
+# Fork: 1 of 1
+# Warmup Iteration   1: 28.750 ±(99.9%) 2.023 ns/op
+# Warmup Iteration   2: 29.013 ±(99.9%) 0.409 ns/op
+Iteration   1: 29.861 ±(99.9%) 0.168 ns/op
+                 baseline·p0.00:   22.000 ns/op
+                 baseline·p0.50:   30.000 ns/op
+                 baseline·p0.90:   30.000 ns/op
+                 baseline·p0.95:   30.000 ns/op
+                 baseline·p0.99:   31.000 ns/op
+                 baseline·p0.999:  39.000 ns/op
+                 baseline·p0.9999: 689.027 ns/op
+                 baseline·p1.00:   5176.000 ns/op
+
+Iteration   2: 30.991 ±(99.9%) 0.120 ns/op
+                 baseline·p0.00:   28.000 ns/op
+                 baseline·p0.50:   31.000 ns/op
+                 baseline·p0.90:   32.000 ns/op
+                 baseline·p0.95:   32.000 ns/op
+                 baseline·p0.99:   32.000 ns/op
+                 baseline·p0.999:  39.000 ns/op
+                 baseline·p0.9999: 157.122 ns/op
+                 baseline·p1.00:   2828.000 ns/op
+
+Iteration   3: 29.809 ±(99.9%) 0.164 ns/op
+                 baseline·p0.00:   22.000 ns/op
+                 baseline·p0.50:   30.000 ns/op
+                 baseline·p0.90:   30.000 ns/op
+                 baseline·p0.95:   30.000 ns/op
+                 baseline·p0.99:   31.000 ns/op
+                 baseline·p0.999:  39.000 ns/op
+                 baseline·p0.9999: 157.000 ns/op
+                 baseline·p1.00:   8240.000 ns/op
+
+Iteration   4: 30.562 ±(99.9%) 0.765 ns/op
+                 baseline·p0.00:   25.000 ns/op
+                 baseline·p0.50:   30.000 ns/op
+                 baseline·p0.90:   30.000 ns/op
+                 baseline·p0.95:   30.000 ns/op
+                 baseline·p0.99:   31.000 ns/op
+                 baseline·p0.999:  39.000 ns/op
+                 baseline·p0.9999: 1832.892 ns/op
+                 baseline·p1.00:   53120.000 ns/op
+
+Iteration   5: 30.147 ±(99.9%) 2.434 ns/op
+                 baseline·p0.00:   22.000 ns/op
+                 baseline·p0.50:   30.000 ns/op
+                 baseline·p0.90:   30.000 ns/op
+                 baseline·p0.95:   30.000 ns/op
+                 baseline·p0.99:   31.000 ns/op
+                 baseline·p0.999:  39.000 ns/op
+                 baseline·p0.9999: 182.128 ns/op
+                 baseline·p1.00:   181504.000 ns/op
+
+
+
+Result "io.teng.benchmark.Benchmarks.baseline":
+  N = 1208386
+  mean =     30.271 ±(99.9%) 0.520 ns/op
+
+  Histogram, ns/op:
+    [     0.000,  12500.000) = 1208384 
+    [ 12500.000,  25000.000) = 0 
+    [ 25000.000,  37500.000) = 0 
+    [ 37500.000,  50000.000) = 0 
+    [ 50000.000,  62500.000) = 1 
+    [ 62500.000,  75000.000) = 0 
+    [ 75000.000,  87500.000) = 0 
+    [ 87500.000, 100000.000) = 0 
+    [100000.000, 112500.000) = 0 
+    [112500.000, 125000.000) = 0 
+    [125000.000, 137500.000) = 0 
+    [137500.000, 150000.000) = 0 
+    [150000.000, 162500.000) = 0 
+    [162500.000, 175000.000) = 0 
+    [175000.000, 187500.000) = 1 
+
+  Percentiles, ns/op:
+      p(0.0000) =     22.000 ns/op
+     p(50.0000) =     30.000 ns/op
+     p(90.0000) =     31.000 ns/op
+     p(95.0000) =     32.000 ns/op
+     p(99.0000) =     32.000 ns/op
+     p(99.9000) =     39.000 ns/op
+     p(99.9900) =    211.807 ns/op
+     p(99.9990) =   3807.974 ns/op
+     p(99.9999) = 154750.443 ns/op
+    p(100.0000) = 181504.000 ns/op
+
+
+# JMH version: 1.21
+# VM version: JDK 12, Java HotSpot(TM) 64-Bit Server VM, 12+33
+# VM invoker: /opt/java/oracle_jdk12/bin/java
+# VM options: <none>
+# Warmup: 2 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Sampling time
+# Benchmark: io.teng.benchmark.Benchmarks.groundTest
+
+# Run progress: 12.50% complete, ETA 00:08:12
+# Fork: 1 of 1
+# Warmup Iteration   1: 34.784 ±(99.9%) 7.929 ns/op
+# Warmup Iteration   2: 30.768 ±(99.9%) 0.974 ns/op
+Iteration   1: 32.741 ±(99.9%) 0.284 ns/op
+                 groundTest·p0.00:   30.000 ns/op
+                 groundTest·p0.50:   31.000 ns/op
+                 groundTest·p0.90:   36.000 ns/op
+                 groundTest·p0.95:   36.000 ns/op
+                 groundTest·p0.99:   36.000 ns/op
+                 groundTest·p0.999:  70.000 ns/op
+                 groundTest·p0.9999: 1832.330 ns/op
+                 groundTest·p1.00:   12544.000 ns/op
+
+Iteration   2: 33.234 ±(99.9%) 2.213 ns/op
+                 groundTest·p0.00:   30.000 ns/op
+                 groundTest·p0.50:   31.000 ns/op
+                 groundTest·p0.90:   36.000 ns/op
+                 groundTest·p0.95:   36.000 ns/op
+                 groundTest·p0.99:   36.000 ns/op
+                 groundTest·p0.999:  70.000 ns/op
+                 groundTest·p0.9999: 618.713 ns/op
+                 groundTest·p1.00:   173824.000 ns/op
+
+Iteration   3: 31.571 ±(99.9%) 0.156 ns/op
+                 groundTest·p0.00:   30.000 ns/op
+                 groundTest·p0.50:   31.000 ns/op
+                 groundTest·p0.90:   35.000 ns/op
+                 groundTest·p0.95:   36.000 ns/op
+                 groundTest·p0.99:   36.000 ns/op
+                 groundTest·p0.999:  37.000 ns/op
+                 groundTest·p0.9999: 138.033 ns/op
+                 groundTest·p1.00:   7272.000 ns/op
+
+Iteration   4: 32.412 ±(99.9%) 0.180 ns/op
+                 groundTest·p0.00:   30.000 ns/op
+                 groundTest·p0.50:   31.000 ns/op
+                 groundTest·p0.90:   36.000 ns/op
+                 groundTest·p0.95:   36.000 ns/op
+                 groundTest·p0.99:   36.000 ns/op
+                 groundTest·p0.999:  40.000 ns/op
+                 groundTest·p0.9999: 151.992 ns/op
+                 groundTest·p1.00:   9888.000 ns/op
+
+Iteration   5: 32.692 ±(99.9%) 0.899 ns/op
+                 groundTest·p0.00:   30.000 ns/op
+                 groundTest·p0.50:   31.000 ns/op
+                 groundTest·p0.90:   36.000 ns/op
+                 groundTest·p0.95:   36.000 ns/op
+                 groundTest·p0.99:   36.000 ns/op
+                 groundTest·p0.999:  41.000 ns/op
+                 groundTest·p0.9999: 152.952 ns/op
+                 groundTest·p1.00:   51968.000 ns/op
+
+
+
+Result "io.teng.benchmark.Benchmarks.groundTest":
+  N = 1305941
+  mean =     32.524 ±(99.9%) 0.480 ns/op
+
+  Histogram, ns/op:
+    [     0.000,  12500.000) = 1305937 
+    [ 12500.000,  25000.000) = 1 
+    [ 25000.000,  37500.000) = 0 
+    [ 37500.000,  50000.000) = 1 
+    [ 50000.000,  62500.000) = 1 
+    [ 62500.000,  75000.000) = 0 
+    [ 75000.000,  87500.000) = 0 
+    [ 87500.000, 100000.000) = 0 
+    [100000.000, 112500.000) = 0 
+    [112500.000, 125000.000) = 0 
+    [125000.000, 137500.000) = 0 
+    [137500.000, 150000.000) = 0 
+    [150000.000, 162500.000) = 0 
+    [162500.000, 175000.000) = 1 
+    [175000.000, 187500.000) = 0 
+
+  Percentiles, ns/op:
+      p(0.0000) =     30.000 ns/op
+     p(50.0000) =     31.000 ns/op
+     p(90.0000) =     36.000 ns/op
+     p(95.0000) =     36.000 ns/op
+     p(99.0000) =     36.000 ns/op
+     p(99.9000) =     64.000 ns/op
+     p(99.9900) =    208.623 ns/op
+     p(99.9990) =   4151.681 ns/op
+     p(99.9999) = 136543.132 ns/op
+    p(100.0000) = 173824.000 ns/op
+
+
+# JMH version: 1.21
+# VM version: JDK 12, Java HotSpot(TM) 64-Bit Server VM, 12+33
+# VM invoker: /opt/java/oracle_jdk12/bin/java
+# VM options: <none>
+# Warmup: 2 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Sampling time
+# Benchmark: io.teng.benchmark.Benchmarks.oneDepthExceptionTest
+
+# Run progress: 25.00% complete, ETA 00:07:02
+# Fork: 1 of 1
+# Warmup Iteration   1: 2188.441 ±(99.9%) 163.756 ns/op
+# Warmup Iteration   2: 2086.574 ±(99.9%) 56.606 ns/op
+Iteration   1: 2128.772 ±(99.9%) 23.056 ns/op
+                 oneDepthExceptionTest·p0.00:   1930.000 ns/op
+                 oneDepthExceptionTest·p0.50:   2042.000 ns/op
+                 oneDepthExceptionTest·p0.90:   2224.000 ns/op
+                 oneDepthExceptionTest·p0.95:   2508.000 ns/op
+                 oneDepthExceptionTest·p0.99:   3264.000 ns/op
+                 oneDepthExceptionTest·p0.999:  7792.000 ns/op
+                 oneDepthExceptionTest·p0.9999: 11637.424 ns/op
+                 oneDepthExceptionTest·p1.00:   2072576.000 ns/op
+
+Iteration   2: 2131.604 ±(99.9%) 28.364 ns/op
+                 oneDepthExceptionTest·p0.00:   1934.000 ns/op
+                 oneDepthExceptionTest·p0.50:   2042.000 ns/op
+                 oneDepthExceptionTest·p0.90:   2232.000 ns/op
+                 oneDepthExceptionTest·p0.95:   2448.000 ns/op
+                 oneDepthExceptionTest·p0.99:   3260.000 ns/op
+                 oneDepthExceptionTest·p0.999:  7659.272 ns/op
+                 oneDepthExceptionTest·p0.9999: 11829.454 ns/op
+                 oneDepthExceptionTest·p1.00:   1966080.000 ns/op
+
+Iteration   3: 2131.672 ±(99.9%) 47.211 ns/op
+                 oneDepthExceptionTest·p0.00:   1928.000 ns/op
+                 oneDepthExceptionTest·p0.50:   2038.000 ns/op
+                 oneDepthExceptionTest·p0.90:   2216.000 ns/op
+                 oneDepthExceptionTest·p0.95:   2360.000 ns/op
+                 oneDepthExceptionTest·p0.99:   3116.000 ns/op
+                 oneDepthExceptionTest·p0.999:  7768.000 ns/op
+                 oneDepthExceptionTest·p0.9999: 13327.283 ns/op
+                 oneDepthExceptionTest·p1.00:   3211264.000 ns/op
+
+Iteration   4: 2138.912 ±(99.9%) 51.759 ns/op
+                 oneDepthExceptionTest·p0.00:   1934.000 ns/op
+                 oneDepthExceptionTest·p0.50:   2040.000 ns/op
+                 oneDepthExceptionTest·p0.90:   2216.000 ns/op
+                 oneDepthExceptionTest·p0.95:   2372.000 ns/op
+                 oneDepthExceptionTest·p0.99:   3132.000 ns/op
+                 oneDepthExceptionTest·p0.999:  7568.000 ns/op
+                 oneDepthExceptionTest·p0.9999: 12134.885 ns/op
+                 oneDepthExceptionTest·p1.00:   3223552.000 ns/op
+
+Iteration   5: 2124.956 ±(99.9%) 35.566 ns/op
+                 oneDepthExceptionTest·p0.00:   1928.000 ns/op
+                 oneDepthExceptionTest·p0.50:   2040.000 ns/op
+                 oneDepthExceptionTest·p0.90:   2216.000 ns/op
+                 oneDepthExceptionTest·p0.95:   2368.000 ns/op
+                 oneDepthExceptionTest·p0.99:   3152.000 ns/op
+                 oneDepthExceptionTest·p0.999:  7368.000 ns/op
+                 oneDepthExceptionTest·p0.9999: 11521.320 ns/op
+                 oneDepthExceptionTest·p1.00:   2048000.000 ns/op
+
+
+
+Result "io.teng.benchmark.Benchmarks.oneDepthExceptionTest":
+  N = 1493518
+  mean =   2131.185 ±(99.9%) 17.366 ns/op
+
+  Histogram, ns/op:
+    [      0.000,  250000.000) = 1493505 
+    [ 250000.000,  500000.000) = 0 
+    [ 500000.000,  750000.000) = 0 
+    [ 750000.000, 1000000.000) = 0 
+    [1000000.000, 1250000.000) = 0 
+    [1250000.000, 1500000.000) = 0 
+    [1500000.000, 1750000.000) = 3 
+    [1750000.000, 2000000.000) = 4 
+    [2000000.000, 2250000.000) = 3 
+    [2250000.000, 2500000.000) = 1 
+    [2500000.000, 2750000.000) = 0 
+    [2750000.000, 3000000.000) = 0 
+    [3000000.000, 3250000.000) = 2 
+    [3250000.000, 3500000.000) = 0 
+    [3500000.000, 3750000.000) = 0 
+
+  Percentiles, ns/op:
+      p(0.0000) =   1928.000 ns/op
+     p(50.0000) =   2040.000 ns/op
+     p(90.0000) =   2220.000 ns/op
+     p(95.0000) =   2400.000 ns/op
+     p(99.0000) =   3200.000 ns/op
+     p(99.9000) =   7680.000 ns/op
+     p(99.9900) =  12048.000 ns/op
+     p(99.9990) = 188449.183 ns/op
+     p(99.9999) = 3217487.639 ns/op
+    p(100.0000) = 3223552.000 ns/op
+
+
+# JMH version: 1.21
+# VM version: JDK 12, Java HotSpot(TM) 64-Bit Server VM, 12+33
+# VM invoker: /opt/java/oracle_jdk12/bin/java
+# VM options: <none>
+# Warmup: 2 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Sampling time
+# Benchmark: io.teng.benchmark.Benchmarks.oneDepthGroundTest
+
+# Run progress: 37.50% complete, ETA 00:05:51
+# Fork: 1 of 1
+# Warmup Iteration   1: 33.566 ±(99.9%) 2.114 ns/op
+# Warmup Iteration   2: 30.805 ±(99.9%) 0.902 ns/op
+Iteration   1: 33.524 ±(99.9%) 0.805 ns/op
+                 oneDepthGroundTest·p0.00:   31.000 ns/op
+                 oneDepthGroundTest·p0.50:   32.000 ns/op
+                 oneDepthGroundTest·p0.90:   37.000 ns/op
+                 oneDepthGroundTest·p0.95:   37.000 ns/op
+                 oneDepthGroundTest·p0.99:   38.000 ns/op
+                 oneDepthGroundTest·p0.999:  43.000 ns/op
+                 oneDepthGroundTest·p0.9999: 209.874 ns/op
+                 oneDepthGroundTest·p1.00:   63104.000 ns/op
+
+Iteration   2: 32.814 ±(99.9%) 0.595 ns/op
+                 oneDepthGroundTest·p0.00:   31.000 ns/op
+                 oneDepthGroundTest·p0.50:   32.000 ns/op
+                 oneDepthGroundTest·p0.90:   33.000 ns/op
+                 oneDepthGroundTest·p0.95:   34.000 ns/op
+                 oneDepthGroundTest·p0.99:   34.000 ns/op
+                 oneDepthGroundTest·p0.999:  43.000 ns/op
+                 oneDepthGroundTest·p0.9999: 1783.306 ns/op
+                 oneDepthGroundTest·p1.00:   46400.000 ns/op
+
+Iteration   3: 32.560 ±(99.9%) 0.153 ns/op
+                 oneDepthGroundTest·p0.00:   31.000 ns/op
+                 oneDepthGroundTest·p0.50:   32.000 ns/op
+                 oneDepthGroundTest·p0.90:   33.000 ns/op
+                 oneDepthGroundTest·p0.95:   34.000 ns/op
+                 oneDepthGroundTest·p0.99:   38.000 ns/op
+                 oneDepthGroundTest·p0.999:  43.000 ns/op
+                 oneDepthGroundTest·p0.9999: 160.790 ns/op
+                 oneDepthGroundTest·p1.00:   3876.000 ns/op
+
+Iteration   4: 33.416 ±(99.9%) 0.174 ns/op
+                 oneDepthGroundTest·p0.00:   31.000 ns/op
+                 oneDepthGroundTest·p0.50:   33.000 ns/op
+                 oneDepthGroundTest·p0.90:   37.000 ns/op
+                 oneDepthGroundTest·p0.95:   37.000 ns/op
+                 oneDepthGroundTest·p0.99:   39.000 ns/op
+                 oneDepthGroundTest·p0.999:  44.000 ns/op
+                 oneDepthGroundTest·p0.9999: 1151.589 ns/op
+                 oneDepthGroundTest·p1.00:   5208.000 ns/op
+
+Iteration   5: 32.554 ±(99.9%) 0.167 ns/op
+                 oneDepthGroundTest·p0.00:   31.000 ns/op
+                 oneDepthGroundTest·p0.50:   32.000 ns/op
+                 oneDepthGroundTest·p0.90:   33.000 ns/op
+                 oneDepthGroundTest·p0.95:   34.000 ns/op
+                 oneDepthGroundTest·p0.99:   34.000 ns/op
+                 oneDepthGroundTest·p0.999:  43.000 ns/op
+                 oneDepthGroundTest·p0.9999: 1075.930 ns/op
+                 oneDepthGroundTest·p1.00:   4416.000 ns/op
+
+
+
+Result "io.teng.benchmark.Benchmarks.oneDepthGroundTest":
+  N = 1350835
+  mean =     32.968 ±(99.9%) 0.207 ns/op
+
+  Histogram, ns/op:
+    [    0.000,  5000.000) = 1350830 
+    [ 5000.000, 10000.000) = 2 
+    [10000.000, 15000.000) = 1 
+    [15000.000, 20000.000) = 0 
+    [20000.000, 25000.000) = 0 
+    [25000.000, 30000.000) = 0 
+    [30000.000, 35000.000) = 0 
+    [35000.000, 40000.000) = 0 
+    [40000.000, 45000.000) = 0 
+    [45000.000, 50000.000) = 1 
+    [50000.000, 55000.000) = 0 
+    [55000.000, 60000.000) = 0 
+    [60000.000, 65000.000) = 1 
+
+  Percentiles, ns/op:
+      p(0.0000) =     31.000 ns/op
+     p(50.0000) =     32.000 ns/op
+     p(90.0000) =     34.000 ns/op
+     p(95.0000) =     37.000 ns/op
+     p(99.0000) =     38.000 ns/op
+     p(99.9000) =     43.000 ns/op
+     p(99.9900) =   1185.331 ns/op
+     p(99.9990) =   3839.398 ns/op
+     p(99.9999) =  57243.635 ns/op
+    p(100.0000) =  63104.000 ns/op
+
+
+# JMH version: 1.21
+# VM version: JDK 12, Java HotSpot(TM) 64-Bit Server VM, 12+33
+# VM invoker: /opt/java/oracle_jdk12/bin/java
+# VM options: <none>
+# Warmup: 2 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Sampling time
+# Benchmark: io.teng.benchmark.Benchmarks.oneDepthWithTryCatchGroundTest
+
+# Run progress: 50.00% complete, ETA 00:04:41
+# Fork: 1 of 1
+# Warmup Iteration   1: 31.633 ±(99.9%) 2.120 ns/op
+# Warmup Iteration   2: 30.556 ±(99.9%) 1.042 ns/op
+Iteration   1: 32.542 ±(99.9%) 0.254 ns/op
+                 oneDepthWithTryCatchGroundTest·p0.00:   30.000 ns/op
+                 oneDepthWithTryCatchGroundTest·p0.50:   31.000 ns/op
+                 oneDepthWithTryCatchGroundTest·p0.90:   36.000 ns/op
+                 oneDepthWithTryCatchGroundTest·p0.95:   36.000 ns/op
+                 oneDepthWithTryCatchGroundTest·p0.99:   36.000 ns/op
+                 oneDepthWithTryCatchGroundTest·p0.999:  45.000 ns/op
+                 oneDepthWithTryCatchGroundTest·p0.9999: 148.996 ns/op
+                 oneDepthWithTryCatchGroundTest·p1.00:   13168.000 ns/op
+
+Iteration   2: 31.576 ±(99.9%) 0.144 ns/op
+                 oneDepthWithTryCatchGroundTest·p0.00:   30.000 ns/op
+                 oneDepthWithTryCatchGroundTest·p0.50:   31.000 ns/op
+                 oneDepthWithTryCatchGroundTest·p0.90:   35.000 ns/op
+                 oneDepthWithTryCatchGroundTest·p0.95:   36.000 ns/op
+                 oneDepthWithTryCatchGroundTest·p0.99:   36.000 ns/op
+                 oneDepthWithTryCatchGroundTest·p0.999:  41.000 ns/op
+                 oneDepthWithTryCatchGroundTest·p0.9999: 75.589 ns/op
+                 oneDepthWithTryCatchGroundTest·p1.00:   4936.000 ns/op
+
+Iteration   3: 35.266 ±(99.9%) 9.042 ns/op
+                 oneDepthWithTryCatchGroundTest·p0.00:   30.000 ns/op
+                 oneDepthWithTryCatchGroundTest·p0.50:   31.000 ns/op
+                 oneDepthWithTryCatchGroundTest·p0.90:   35.000 ns/op
+                 oneDepthWithTryCatchGroundTest·p0.95:   36.000 ns/op
+                 oneDepthWithTryCatchGroundTest·p0.99:   36.000 ns/op
+                 oneDepthWithTryCatchGroundTest·p0.999:  44.000 ns/op
+                 oneDepthWithTryCatchGroundTest·p0.9999: 1157.332 ns/op
+                 oneDepthWithTryCatchGroundTest·p1.00:   719872.000 ns/op
+
+Iteration   4: 31.040 ±(99.9%) 0.188 ns/op
+                 oneDepthWithTryCatchGroundTest·p0.00:   30.000 ns/op
+                 oneDepthWithTryCatchGroundTest·p0.50:   31.000 ns/op
+                 oneDepthWithTryCatchGroundTest·p0.90:   32.000 ns/op
+                 oneDepthWithTryCatchGroundTest·p0.95:   32.000 ns/op
+                 oneDepthWithTryCatchGroundTest·p0.99:   33.000 ns/op
+                 oneDepthWithTryCatchGroundTest·p0.999:  42.000 ns/op
+                 oneDepthWithTryCatchGroundTest·p0.9999: 1639.289 ns/op
+                 oneDepthWithTryCatchGroundTest·p1.00:   4816.000 ns/op
+
+Iteration   5: 31.028 ±(99.9%) 0.196 ns/op
+                 oneDepthWithTryCatchGroundTest·p0.00:   30.000 ns/op
+                 oneDepthWithTryCatchGroundTest·p0.50:   30.000 ns/op
+                 oneDepthWithTryCatchGroundTest·p0.90:   32.000 ns/op
+                 oneDepthWithTryCatchGroundTest·p0.95:   32.000 ns/op
+                 oneDepthWithTryCatchGroundTest·p0.99:   33.000 ns/op
+                 oneDepthWithTryCatchGroundTest·p0.999:  42.000 ns/op
+                 oneDepthWithTryCatchGroundTest·p0.9999: 1920.443 ns/op
+                 oneDepthWithTryCatchGroundTest·p1.00:   4672.000 ns/op
+
+
+
+Result "io.teng.benchmark.Benchmarks.oneDepthWithTryCatchGroundTest":
+  N = 1337843
+  mean =     32.268 ±(99.9%) 1.782 ns/op
+
+  Histogram, ns/op:
+    [     0.000,  50000.000) = 1337841 
+    [ 50000.000, 100000.000) = 1 
+    [100000.000, 150000.000) = 0 
+    [150000.000, 200000.000) = 0 
+    [200000.000, 250000.000) = 0 
+    [250000.000, 300000.000) = 0 
+    [300000.000, 350000.000) = 0 
+    [350000.000, 400000.000) = 0 
+    [400000.000, 450000.000) = 0 
+    [450000.000, 500000.000) = 0 
+    [500000.000, 550000.000) = 0 
+    [550000.000, 600000.000) = 0 
+    [600000.000, 650000.000) = 0 
+    [650000.000, 700000.000) = 0 
+    [700000.000, 750000.000) = 1 
+
+  Percentiles, ns/op:
+      p(0.0000) =     30.000 ns/op
+     p(50.0000) =     31.000 ns/op
+     p(90.0000) =     35.000 ns/op
+     p(95.0000) =     36.000 ns/op
+     p(99.0000) =     36.000 ns/op
+     p(99.9000) =     43.000 ns/op
+     p(99.9900) =   1164.862 ns/op
+     p(99.9990) =   4103.349 ns/op
+     p(99.9999) = 495435.474 ns/op
+    p(100.0000) = 719872.000 ns/op
+
+
+# JMH version: 1.21
+# VM version: JDK 12, Java HotSpot(TM) 64-Bit Server VM, 12+33
+# VM invoker: /opt/java/oracle_jdk12/bin/java
+# VM options: <none>
+# Warmup: 2 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Sampling time
+# Benchmark: io.teng.benchmark.Benchmarks.simplifiedGroundTest
+
+# Run progress: 62.50% complete, ETA 00:03:31
+# Fork: 1 of 1
+# Warmup Iteration   1: 32.489 ±(99.9%) 2.168 ns/op
+# Warmup Iteration   2: 32.172 ±(99.9%) 1.276 ns/op
+Iteration   1: 34.044 ±(99.9%) 0.831 ns/op
+                 simplifiedGroundTest·p0.00:   31.000 ns/op
+                 simplifiedGroundTest·p0.50:   33.000 ns/op
+                 simplifiedGroundTest·p0.90:   37.000 ns/op
+                 simplifiedGroundTest·p0.95:   37.000 ns/op
+                 simplifiedGroundTest·p0.99:   39.000 ns/op
+                 simplifiedGroundTest·p0.999:  50.000 ns/op
+                 simplifiedGroundTest·p0.9999: 1711.950 ns/op
+                 simplifiedGroundTest·p1.00:   63936.000 ns/op
+
+Iteration   2: 33.886 ±(99.9%) 0.755 ns/op
+                 simplifiedGroundTest·p0.00:   31.000 ns/op
+                 simplifiedGroundTest·p0.50:   33.000 ns/op
+                 simplifiedGroundTest·p0.90:   37.000 ns/op
+                 simplifiedGroundTest·p0.95:   37.000 ns/op
+                 simplifiedGroundTest·p0.99:   38.000 ns/op
+                 simplifiedGroundTest·p0.999:  47.000 ns/op
+                 simplifiedGroundTest·p0.9999: 1841.960 ns/op
+                 simplifiedGroundTest·p1.00:   59264.000 ns/op
+
+Iteration   3: 33.656 ±(99.9%) 0.179 ns/op
+                 simplifiedGroundTest·p0.00:   31.000 ns/op
+                 simplifiedGroundTest·p0.50:   33.000 ns/op
+                 simplifiedGroundTest·p0.90:   37.000 ns/op
+                 simplifiedGroundTest·p0.95:   37.000 ns/op
+                 simplifiedGroundTest·p0.99:   38.000 ns/op
+                 simplifiedGroundTest·p0.999:  52.000 ns/op
+                 simplifiedGroundTest·p0.9999: 1243.278 ns/op
+                 simplifiedGroundTest·p1.00:   5728.000 ns/op
+
+Iteration   4: 34.697 ±(99.9%) 0.746 ns/op
+                 simplifiedGroundTest·p0.00:   31.000 ns/op
+                 simplifiedGroundTest·p0.50:   33.000 ns/op
+                 simplifiedGroundTest·p0.90:   37.000 ns/op
+                 simplifiedGroundTest·p0.95:   38.000 ns/op
+                 simplifiedGroundTest·p0.99:   38.000 ns/op
+                 simplifiedGroundTest·p0.999:  51.000 ns/op
+                 simplifiedGroundTest·p0.9999: 164.522 ns/op
+                 simplifiedGroundTest·p1.00:   58048.000 ns/op
+
+Iteration   5: 34.517 ±(99.9%) 0.167 ns/op
+                 simplifiedGroundTest·p0.00:   31.000 ns/op
+                 simplifiedGroundTest·p0.50:   33.000 ns/op
+                 simplifiedGroundTest·p0.90:   37.000 ns/op
+                 simplifiedGroundTest·p0.95:   38.000 ns/op
+                 simplifiedGroundTest·p0.99:   38.000 ns/op
+                 simplifiedGroundTest·p0.999:  53.000 ns/op
+                 simplifiedGroundTest·p0.9999: 1842.912 ns/op
+                 simplifiedGroundTest·p1.00:   3404.000 ns/op
+
+
+
+Result "io.teng.benchmark.Benchmarks.simplifiedGroundTest":
+  N = 1318212
+  mean =     34.155 ±(99.9%) 0.275 ns/op
+
+  Histogram, ns/op:
+    [    0.000,  5000.000) = 1318200 
+    [ 5000.000, 10000.000) = 8 
+    [10000.000, 15000.000) = 1 
+    [15000.000, 20000.000) = 0 
+    [20000.000, 25000.000) = 0 
+    [25000.000, 30000.000) = 0 
+    [30000.000, 35000.000) = 0 
+    [35000.000, 40000.000) = 0 
+    [40000.000, 45000.000) = 0 
+    [45000.000, 50000.000) = 0 
+    [50000.000, 55000.000) = 0 
+    [55000.000, 60000.000) = 2 
+    [60000.000, 65000.000) = 1 
+
+  Percentiles, ns/op:
+      p(0.0000) =     31.000 ns/op
+     p(50.0000) =     33.000 ns/op
+     p(90.0000) =     37.000 ns/op
+     p(95.0000) =     37.000 ns/op
+     p(99.0000) =     38.000 ns/op
+     p(99.9000) =     51.000 ns/op
+     p(99.9900) =    959.960 ns/op
+     p(99.9990) =   4370.859 ns/op
+     p(99.9999) =  62449.309 ns/op
+    p(100.0000) =  63936.000 ns/op
+
+
+# JMH version: 1.21
+# VM version: JDK 12, Java HotSpot(TM) 64-Bit Server VM, 12+33
+# VM invoker: /opt/java/oracle_jdk12/bin/java
+# VM options: <none>
+# Warmup: 2 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Sampling time
+# Benchmark: io.teng.benchmark.Benchmarks.twoDepthExceptionTest
+
+# Run progress: 75.00% complete, ETA 00:02:20
+# Fork: 1 of 1
+# Warmup Iteration   1: 2157.108 ±(99.9%) 143.647 ns/op
+# Warmup Iteration   2: 2081.412 ±(99.9%) 70.496 ns/op
+Iteration   1: 2117.719 ±(99.9%) 27.216 ns/op
+                 twoDepthExceptionTest·p0.00:   1940.000 ns/op
+                 twoDepthExceptionTest·p0.50:   2060.000 ns/op
+                 twoDepthExceptionTest·p0.90:   2160.000 ns/op
+                 twoDepthExceptionTest·p0.95:   2276.000 ns/op
+                 twoDepthExceptionTest·p0.99:   3108.000 ns/op
+                 twoDepthExceptionTest·p0.999:  7312.000 ns/op
+                 twoDepthExceptionTest·p0.9999: 11649.050 ns/op
+                 twoDepthExceptionTest·p1.00:   1861632.000 ns/op
+
+Iteration   2: 2102.249 ±(99.9%) 22.944 ns/op
+                 twoDepthExceptionTest·p0.00:   1948.000 ns/op
+                 twoDepthExceptionTest·p0.50:   2060.000 ns/op
+                 twoDepthExceptionTest·p0.90:   2160.000 ns/op
+                 twoDepthExceptionTest·p0.95:   2240.000 ns/op
+                 twoDepthExceptionTest·p0.99:   2536.000 ns/op
+                 twoDepthExceptionTest·p0.999:  6303.040 ns/op
+                 twoDepthExceptionTest·p0.9999: 11430.768 ns/op
+                 twoDepthExceptionTest·p1.00:   2082816.000 ns/op
+
+Iteration   3: 2105.449 ±(99.9%) 35.632 ns/op
+                 twoDepthExceptionTest·p0.00:   1716.000 ns/op
+                 twoDepthExceptionTest·p0.50:   2056.000 ns/op
+                 twoDepthExceptionTest·p0.90:   2156.000 ns/op
+                 twoDepthExceptionTest·p0.95:   2228.000 ns/op
+                 twoDepthExceptionTest·p0.99:   2580.000 ns/op
+                 twoDepthExceptionTest·p0.999:  5980.560 ns/op
+                 twoDepthExceptionTest·p0.9999: 11793.824 ns/op
+                 twoDepthExceptionTest·p1.00:   2017280.000 ns/op
+
+Iteration   4: 2117.086 ±(99.9%) 29.850 ns/op
+                 twoDepthExceptionTest·p0.00:   1944.000 ns/op
+                 twoDepthExceptionTest·p0.50:   2060.000 ns/op
+                 twoDepthExceptionTest·p0.90:   2164.000 ns/op
+                 twoDepthExceptionTest·p0.95:   2268.000 ns/op
+                 twoDepthExceptionTest·p0.99:   3132.000 ns/op
+                 twoDepthExceptionTest·p0.999:  6565.960 ns/op
+                 twoDepthExceptionTest·p0.9999: 11136.477 ns/op
+                 twoDepthExceptionTest·p1.00:   1927168.000 ns/op
+
+Iteration   5: 2104.210 ±(99.9%) 28.681 ns/op
+                 twoDepthExceptionTest·p0.00:   1946.000 ns/op
+                 twoDepthExceptionTest·p0.50:   2056.000 ns/op
+                 twoDepthExceptionTest·p0.90:   2156.000 ns/op
+                 twoDepthExceptionTest·p0.95:   2224.000 ns/op
+                 twoDepthExceptionTest·p0.99:   2512.000 ns/op
+                 twoDepthExceptionTest·p0.999:  6350.032 ns/op
+                 twoDepthExceptionTest·p0.9999: 11299.672 ns/op
+                 twoDepthExceptionTest·p1.00:   1957888.000 ns/op
+
+
+
+Result "io.teng.benchmark.Benchmarks.twoDepthExceptionTest":
+  N = 1502476
+  mean =   2109.329 ±(99.9%) 13.050 ns/op
+
+  Histogram, ns/op:
+    [      0.000,  250000.000) = 1502466 
+    [ 250000.000,  500000.000) = 0 
+    [ 500000.000,  750000.000) = 0 
+    [ 750000.000, 1000000.000) = 0 
+    [1000000.000, 1250000.000) = 0 
+    [1250000.000, 1500000.000) = 0 
+    [1500000.000, 1750000.000) = 3 
+    [1750000.000, 2000000.000) = 5 
+    [2000000.000, 2250000.000) = 2 
+    [2250000.000, 2500000.000) = 0 
+    [2500000.000, 2750000.000) = 0 
+
+  Percentiles, ns/op:
+      p(0.0000) =   1716.000 ns/op
+     p(50.0000) =   2060.000 ns/op
+     p(90.0000) =   2160.000 ns/op
+     p(95.0000) =   2244.000 ns/op
+     p(99.0000) =   2752.000 ns/op
+     p(99.9000) =   6424.000 ns/op
+     p(99.9900) =  11436.037 ns/op
+     p(99.9990) =  63788.977 ns/op
+     p(99.9999) = 2049885.667 ns/op
+    p(100.0000) = 2082816.000 ns/op
+
+
+# JMH version: 1.21
+# VM version: JDK 12, Java HotSpot(TM) 64-Bit Server VM, 12+33
+# VM invoker: /opt/java/oracle_jdk12/bin/java
+# VM options: <none>
+# Warmup: 2 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Sampling time
+# Benchmark: io.teng.benchmark.Benchmarks.zeroDepthExceptionTest
+
+# Run progress: 87.50% complete, ETA 00:01:10
+# Fork: 1 of 1
+# Warmup Iteration   1: 2226.538 ±(99.9%) 157.800 ns/op
+# Warmup Iteration   2: 2056.979 ±(99.9%) 54.370 ns/op
+Iteration   1: 2151.673 ±(99.9%) 37.112 ns/op
+                 zeroDepthExceptionTest·p0.00:   1958.000 ns/op
+                 zeroDepthExceptionTest·p0.50:   2096.000 ns/op
+                 zeroDepthExceptionTest·p0.90:   2192.000 ns/op
+                 zeroDepthExceptionTest·p0.95:   2260.000 ns/op
+                 zeroDepthExceptionTest·p0.99:   3024.000 ns/op
+                 zeroDepthExceptionTest·p0.999:  6627.656 ns/op
+                 zeroDepthExceptionTest·p0.9999: 10638.552 ns/op
+                 zeroDepthExceptionTest·p1.00:   2070528.000 ns/op
+
+Iteration   2: 2260.838 ±(99.9%) 363.161 ns/op
+                 zeroDepthExceptionTest·p0.00:   1964.000 ns/op
+                 zeroDepthExceptionTest·p0.50:   2100.000 ns/op
+                 zeroDepthExceptionTest·p0.90:   2192.000 ns/op
+                 zeroDepthExceptionTest·p0.95:   2252.000 ns/op
+                 zeroDepthExceptionTest·p0.99:   2596.000 ns/op
+                 zeroDepthExceptionTest·p0.999:  6795.856 ns/op
+                 zeroDepthExceptionTest·p0.9999: 10973.226 ns/op
+                 zeroDepthExceptionTest·p1.00:   32440320.000 ns/op
+
+Iteration   3: 2153.643 ±(99.9%) 35.856 ns/op
+                 zeroDepthExceptionTest·p0.00:   1972.000 ns/op
+                 zeroDepthExceptionTest·p0.50:   2096.000 ns/op
+                 zeroDepthExceptionTest·p0.90:   2192.000 ns/op
+                 zeroDepthExceptionTest·p0.95:   2260.000 ns/op
+                 zeroDepthExceptionTest·p0.99:   3016.000 ns/op
+                 zeroDepthExceptionTest·p0.999:  6516.736 ns/op
+                 zeroDepthExceptionTest·p0.9999: 10790.182 ns/op
+                 zeroDepthExceptionTest·p1.00:   1929216.000 ns/op
+
+Iteration   4: 2152.661 ±(99.9%) 39.516 ns/op
+                 zeroDepthExceptionTest·p0.00:   1982.000 ns/op
+                 zeroDepthExceptionTest·p0.50:   2096.000 ns/op
+                 zeroDepthExceptionTest·p0.90:   2192.000 ns/op
+                 zeroDepthExceptionTest·p0.95:   2240.000 ns/op
+                 zeroDepthExceptionTest·p0.99:   2528.000 ns/op
+                 zeroDepthExceptionTest·p0.999:  6997.008 ns/op
+                 zeroDepthExceptionTest·p0.9999: 11000.403 ns/op
+                 zeroDepthExceptionTest·p1.00:   1847296.000 ns/op
+
+Iteration   5: 2141.354 ±(99.9%) 32.141 ns/op
+                 zeroDepthExceptionTest·p0.00:   1972.000 ns/op
+                 zeroDepthExceptionTest·p0.50:   2096.000 ns/op
+                 zeroDepthExceptionTest·p0.90:   2192.000 ns/op
+                 zeroDepthExceptionTest·p0.95:   2248.000 ns/op
+                 zeroDepthExceptionTest·p0.99:   2596.000 ns/op
+                 zeroDepthExceptionTest·p0.999:  5656.480 ns/op
+                 zeroDepthExceptionTest·p0.9999: 9764.896 ns/op
+                 zeroDepthExceptionTest·p1.00:   2129920.000 ns/op
+
+
+
+Result "io.teng.benchmark.Benchmarks.zeroDepthExceptionTest":
+  N = 1482144
+  mean =   2171.963 ±(99.9%) 73.848 ns/op
+
+  Histogram, ns/op:
+    [       0.000,  2500000.000) = 1482143 
+    [ 2500000.000,  5000000.000) = 0 
+    [ 5000000.000,  7500000.000) = 0 
+    [ 7500000.000, 10000000.000) = 0 
+    [10000000.000, 12500000.000) = 0 
+    [12500000.000, 15000000.000) = 0 
+    [15000000.000, 17500000.000) = 0 
+    [17500000.000, 20000000.000) = 0 
+    [20000000.000, 22500000.000) = 0 
+    [22500000.000, 25000000.000) = 0 
+    [25000000.000, 27500000.000) = 0 
+    [27500000.000, 30000000.000) = 0 
+    [30000000.000, 32500000.000) = 1 
+    [32500000.000, 35000000.000) = 0 
+    [35000000.000, 37500000.000) = 0 
+
+  Percentiles, ns/op:
+      p(0.0000) =   1958.000 ns/op
+     p(50.0000) =   2096.000 ns/op
+     p(90.0000) =   2192.000 ns/op
+     p(95.0000) =   2252.000 ns/op
+     p(99.0000) =   2668.000 ns/op
+     p(99.9000) =   6486.840 ns/op
+     p(99.9900) =  10572.568 ns/op
+     p(99.9990) = 1726829.670 ns/op
+     p(99.9999) = 17826312.192 ns/op
+    p(100.0000) = 32440320.000 ns/op
+
+
+# Run complete. Total time: 00:09:23
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+Benchmark                                                                           Mode      Cnt         Score    Error  Units
+Benchmarks.baseline                                                               sample  1208386        30.271 ±  0.520  ns/op
+Benchmarks.baseline:baseline·p0.00                                                sample                 22.000           ns/op
+Benchmarks.baseline:baseline·p0.50                                                sample                 30.000           ns/op
+Benchmarks.baseline:baseline·p0.90                                                sample                 31.000           ns/op
+Benchmarks.baseline:baseline·p0.95                                                sample                 32.000           ns/op
+Benchmarks.baseline:baseline·p0.99                                                sample                 32.000           ns/op
+Benchmarks.baseline:baseline·p0.999                                               sample                 39.000           ns/op
+Benchmarks.baseline:baseline·p0.9999                                              sample                211.807           ns/op
+Benchmarks.baseline:baseline·p1.00                                                sample             181504.000           ns/op
+Benchmarks.groundTest                                                             sample  1305941        32.524 ±  0.480  ns/op
+Benchmarks.groundTest:groundTest·p0.00                                            sample                 30.000           ns/op
+Benchmarks.groundTest:groundTest·p0.50                                            sample                 31.000           ns/op
+Benchmarks.groundTest:groundTest·p0.90                                            sample                 36.000           ns/op
+Benchmarks.groundTest:groundTest·p0.95                                            sample                 36.000           ns/op
+Benchmarks.groundTest:groundTest·p0.99                                            sample                 36.000           ns/op
+Benchmarks.groundTest:groundTest·p0.999                                           sample                 64.000           ns/op
+Benchmarks.groundTest:groundTest·p0.9999                                          sample                208.623           ns/op
+Benchmarks.groundTest:groundTest·p1.00                                            sample             173824.000           ns/op
+Benchmarks.oneDepthExceptionTest                                                  sample  1493518      2131.185 ± 17.366  ns/op
+Benchmarks.oneDepthExceptionTest:oneDepthExceptionTest·p0.00                      sample               1928.000           ns/op
+Benchmarks.oneDepthExceptionTest:oneDepthExceptionTest·p0.50                      sample               2040.000           ns/op
+Benchmarks.oneDepthExceptionTest:oneDepthExceptionTest·p0.90                      sample               2220.000           ns/op
+Benchmarks.oneDepthExceptionTest:oneDepthExceptionTest·p0.95                      sample               2400.000           ns/op
+Benchmarks.oneDepthExceptionTest:oneDepthExceptionTest·p0.99                      sample               3200.000           ns/op
+Benchmarks.oneDepthExceptionTest:oneDepthExceptionTest·p0.999                     sample               7680.000           ns/op
+Benchmarks.oneDepthExceptionTest:oneDepthExceptionTest·p0.9999                    sample              12048.000           ns/op
+Benchmarks.oneDepthExceptionTest:oneDepthExceptionTest·p1.00                      sample            3223552.000           ns/op
+Benchmarks.oneDepthGroundTest                                                     sample  1350835        32.968 ±  0.207  ns/op
+Benchmarks.oneDepthGroundTest:oneDepthGroundTest·p0.00                            sample                 31.000           ns/op
+Benchmarks.oneDepthGroundTest:oneDepthGroundTest·p0.50                            sample                 32.000           ns/op
+Benchmarks.oneDepthGroundTest:oneDepthGroundTest·p0.90                            sample                 34.000           ns/op
+Benchmarks.oneDepthGroundTest:oneDepthGroundTest·p0.95                            sample                 37.000           ns/op
+Benchmarks.oneDepthGroundTest:oneDepthGroundTest·p0.99                            sample                 38.000           ns/op
+Benchmarks.oneDepthGroundTest:oneDepthGroundTest·p0.999                           sample                 43.000           ns/op
+Benchmarks.oneDepthGroundTest:oneDepthGroundTest·p0.9999                          sample               1185.331           ns/op
+Benchmarks.oneDepthGroundTest:oneDepthGroundTest·p1.00                            sample              63104.000           ns/op
+Benchmarks.oneDepthWithTryCatchGroundTest                                         sample  1337843        32.268 ±  1.782  ns/op
+Benchmarks.oneDepthWithTryCatchGroundTest:oneDepthWithTryCatchGroundTest·p0.00    sample                 30.000           ns/op
+Benchmarks.oneDepthWithTryCatchGroundTest:oneDepthWithTryCatchGroundTest·p0.50    sample                 31.000           ns/op
+Benchmarks.oneDepthWithTryCatchGroundTest:oneDepthWithTryCatchGroundTest·p0.90    sample                 35.000           ns/op
+Benchmarks.oneDepthWithTryCatchGroundTest:oneDepthWithTryCatchGroundTest·p0.95    sample                 36.000           ns/op
+Benchmarks.oneDepthWithTryCatchGroundTest:oneDepthWithTryCatchGroundTest·p0.99    sample                 36.000           ns/op
+Benchmarks.oneDepthWithTryCatchGroundTest:oneDepthWithTryCatchGroundTest·p0.999   sample                 43.000           ns/op
+Benchmarks.oneDepthWithTryCatchGroundTest:oneDepthWithTryCatchGroundTest·p0.9999  sample               1164.862           ns/op
+Benchmarks.oneDepthWithTryCatchGroundTest:oneDepthWithTryCatchGroundTest·p1.00    sample             719872.000           ns/op
+Benchmarks.simplifiedGroundTest                                                   sample  1318212        34.155 ±  0.275  ns/op
+Benchmarks.simplifiedGroundTest:simplifiedGroundTest·p0.00                        sample                 31.000           ns/op
+Benchmarks.simplifiedGroundTest:simplifiedGroundTest·p0.50                        sample                 33.000           ns/op
+Benchmarks.simplifiedGroundTest:simplifiedGroundTest·p0.90                        sample                 37.000           ns/op
+Benchmarks.simplifiedGroundTest:simplifiedGroundTest·p0.95                        sample                 37.000           ns/op
+Benchmarks.simplifiedGroundTest:simplifiedGroundTest·p0.99                        sample                 38.000           ns/op
+Benchmarks.simplifiedGroundTest:simplifiedGroundTest·p0.999                       sample                 51.000           ns/op
+Benchmarks.simplifiedGroundTest:simplifiedGroundTest·p0.9999                      sample                959.960           ns/op
+Benchmarks.simplifiedGroundTest:simplifiedGroundTest·p1.00                        sample              63936.000           ns/op
+Benchmarks.twoDepthExceptionTest                                                  sample  1502476      2109.329 ± 13.050  ns/op
+Benchmarks.twoDepthExceptionTest:twoDepthExceptionTest·p0.00                      sample               1716.000           ns/op
+Benchmarks.twoDepthExceptionTest:twoDepthExceptionTest·p0.50                      sample               2060.000           ns/op
+Benchmarks.twoDepthExceptionTest:twoDepthExceptionTest·p0.90                      sample               2160.000           ns/op
+Benchmarks.twoDepthExceptionTest:twoDepthExceptionTest·p0.95                      sample               2244.000           ns/op
+Benchmarks.twoDepthExceptionTest:twoDepthExceptionTest·p0.99                      sample               2752.000           ns/op
+Benchmarks.twoDepthExceptionTest:twoDepthExceptionTest·p0.999                     sample               6424.000           ns/op
+Benchmarks.twoDepthExceptionTest:twoDepthExceptionTest·p0.9999                    sample              11436.037           ns/op
+Benchmarks.twoDepthExceptionTest:twoDepthExceptionTest·p1.00                      sample            2082816.000           ns/op
+Benchmarks.zeroDepthExceptionTest                                                 sample  1482144      2171.963 ± 73.848  ns/op
+Benchmarks.zeroDepthExceptionTest:zeroDepthExceptionTest·p0.00                    sample               1958.000           ns/op
+Benchmarks.zeroDepthExceptionTest:zeroDepthExceptionTest·p0.50                    sample               2096.000           ns/op
+Benchmarks.zeroDepthExceptionTest:zeroDepthExceptionTest·p0.90                    sample               2192.000           ns/op
+Benchmarks.zeroDepthExceptionTest:zeroDepthExceptionTest·p0.95                    sample               2252.000           ns/op
+Benchmarks.zeroDepthExceptionTest:zeroDepthExceptionTest·p0.99                    sample               2668.000           ns/op
+Benchmarks.zeroDepthExceptionTest:zeroDepthExceptionTest·p0.999                   sample               6486.840           ns/op
+Benchmarks.zeroDepthExceptionTest:zeroDepthExceptionTest·p0.9999                  sample              10572.568           ns/op
+Benchmarks.zeroDepthExceptionTest:zeroDepthExceptionTest·p1.00                    sample           32440320.000           ns/op
+
+Benchmark result is saved to takna34.json
