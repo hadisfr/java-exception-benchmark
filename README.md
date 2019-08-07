@@ -8,16 +8,20 @@ to investigate performance impact of
 
 ### Local
 
-| Benchmark                      | Mode   | Cnt     | Score    | Error    | Units |
-| ------------------------------ | ------ | ------- | -------- | -------- | ----- |
-| baseline                       | sample | 1133198 | 44.736   | ±  0.863 | ns/op |
-| groundTest                     | sample | 1896757 | 51.505   | ±  0.693 | ns/op |
-| oneDepthExceptionTest          | sample | 1118895 | 1778.152 | ± 14.438 | ns/op |
-| oneDepthGroundTest             | sample | 1838499 | 51.942   | ±  1.285 | ns/op |
-| oneDepthWithTryCatchGroundTest | sample | 1836940 | 60.143   | ±  3.258 | ns/op |
-| simplifiedGroundTest           | sample | 1779411 | 62.229   | ±  3.044 | ns/op |
-| twoDepthExceptionTest          | sample | 1742896 | 1943.462 | ± 44.310 | ns/op |
-| zeroDepthExceptionTest         | sample | 1664964 | 1807.943 | ± 19.644 | ns/op |
+| Benchmark                                   | Mode   | Cnt     | Score    | Error    | Units |
+| ------------------------------------------- | ------ | ------- | -------- | -------- | ----- |
+| Benchmarks.baselin                          | sampl  | 113405  | 46.76    | ±   2.20 | ns/op |
+| Benchmarks.createNewExceptionObjectTes      | sampl  | 166654  | 2081.74  | ±  67.57 | ns/op |
+| Benchmarks.groundTes                        | sampl  | 190195  | 49.54    | ±   0.86 | ns/op |
+| Benchmarks.oneDepthExceptionTes             | sampl  | 186578  | 1735.26  | ±   7.20 | ns/op |
+| Benchmarks.oneDepthGroundTes                | sampl  | 177015  | 74.46    | ±  11.70 | ns/op |
+| Benchmarks.oneDepthWithTryCatchGroundTes    | sampl  | 163206  | 116.62   | ±  48.16 | ns/op |
+| Benchmarks.simplifiedGroundTes              | sampl  | 175213  | 79.57    | ±  17.45 | ns/op |
+| Benchmarks.twoDepthExceptionTes             | sampl  | 167591  | 2086.26  | ±  69.70 | ns/op |
+| Benchmarks.twoDepthWithRethrowExceptionTes  | sampl  | 166684  | 2355.16  | ± 290.36 | ns/op |
+| Benchmarks.twoDepthWithThrowNewExceptionTes | sampl  | 166231  | 4080.05  | ± 144.07 | ns/op |
+| Benchmarks.zeroDepthExceptionTes            | sampl  | 153326  | 2046.24  | ±  68.77 | ns/op |
+
 
 ![benchmarks](local.png)
 
@@ -37,3 +41,7 @@ to investigate performance impact of
 ![benchmarks](remote.png)
 
 Graphs are generated using [JMH Visualizer](https://jmh.morethan.io/).
+
+## Conclusion
+
+Generation of any new object of `Throwable` class has got about 2 us overhead.
