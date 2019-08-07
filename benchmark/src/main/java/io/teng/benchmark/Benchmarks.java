@@ -75,6 +75,45 @@ public class Benchmarks {
         }
     }
 
+    @Benchmark
+    public boolean twoDepthWithRethrowExceptionTest() {
+        try {
+            return oneDepthWithRethrowException();
+        } catch (IllegalArgumentException e) {
+            return false;
+        }
+    }
+
+    @Benchmark
+    public boolean twoDepthWithThrowNewExceptionTest() {
+        try {
+            return oneDepthWithThrowNewException();
+        } catch (IllegalArgumentException e) {
+            return false;
+        }
+    }
+
+    @Benchmark
+    public Exception createNewUncheckedExceptionObjectTest() {
+        return new IllegalArgumentException();
+    }
+
+    @Benchmark
+    public Exception createNewCheckedExceptionObjectTest() {
+        return new Exception();
+    }
+
+    @Benchmark
+    public boolean ThrowableObjectTest() {
+        try {
+            if (one == 1)
+                throw new Throwable();
+            return true;
+        } catch (Throwable e) {
+            return false;
+        }
+    }
+
     private boolean zeroDepthException() {
         if (one == 1)
             throw new IllegalArgumentException("one == 1");
@@ -83,6 +122,28 @@ public class Benchmarks {
 
     private boolean oneDepthException() {
         return zeroDepthException();
+    }
+
+    private boolean oneDepthWithRethrowException() {
+        try {
+            return zeroDepthException();
+        } catch (IllegalArgumentException e) {
+            if (one == 1)
+                throw e;
+            else
+                return false;
+        }
+    }
+
+    private boolean oneDepthWithThrowNewException() {
+        try {
+            return zeroDepthException();
+        } catch (IllegalArgumentException e) {
+            if (one == 1)
+                throw new IllegalArgumentException();
+            else
+                return false;
+        }
     }
 
     public static void main(String[] args) throws RunnerException {
